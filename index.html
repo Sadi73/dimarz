@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>DiMarz</title>
+    <link rel="icon" href="fav.png" type="image/x-icon">
 </head>
 <body>
     <div id="container" class="bg-gray-300 w-11/12 mx-auto text-center p-10 my-10">
-        <h1>Search Our People</h1>
+        <h1 class="text-3xl font-bold mb-5">Search Our People</h1>
         <select name="" id="countryField" class="p-5 rounded-xl mb-1" onchange="countryChanged()">
             <option value="">------Choose Country------</option>
             <option value="USA">USA</option>
@@ -35,8 +36,6 @@
             <option value="Virtual Assistant">Virtual Assistant</option>
             <option value="System Expert">System Expert</option>         
         </select>
-        <br>
-        <button id="searchButton" class="mt-1 bg-cyan-700 px-5 py-3 text-xl text-white rounded-xl hover:bg-cyan-900">Search</button>
 
         <div id="tableField" class="mt-10 hidden">
             <table class="w-full mx-auto rounded-lg table-auto">
