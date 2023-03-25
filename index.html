@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DiMarz</title>
+</head>
+<body>
+    <div id="container" class="bg-gray-300 w-11/12 mx-auto text-center p-10 my-10">
+        <h1>Search Our People</h1>
+        <select name="" id="countryField" class="p-5 rounded-xl mb-1" onchange="countryChanged()">
+            <option value="">------Choose Country------</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="FRANCE">France</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <br>
+        <select name="" id="industryField" class="p-5 rounded-xl">
+            <option value="">------Choose Industry------</option>
+            <option value="Construction">Construction</option>
+            <!-- <option value="Health & Beauty">Health & Beauty</option> -->
+            <option value="Health Care">Health Care</option>
+            <option value="Software">Software</option>
+            <option value="Health">Health</option>
+            <!-- <option value="Law Firm">Law Firm</option> -->
+            <option value="E-Commerce">E-Commerce</option>
+            <option value="Pet Hospital">Pet Hospital</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Virtual Assistant">Virtual Assistant</option>
+            <option value="System Expert">System Expert</option>         
+        </select>
+        <br>
+        <button id="searchButton" class="mt-1 bg-cyan-700 px-5 py-3 text-xl text-white rounded-xl hover:bg-cyan-900">Search</button>
+
+        <div id="tableField" class="mt-10 hidden">
+            <table class="w-full mx-auto rounded-lg table-auto">
+                <thead>
+                    <tr>
+                        <th class="border-solid border-2 border-white">Country</th>
+                        <th class="border-solid border-2 border-white">Industry</th>
+                        <th class="border-solid border-2 border-white">Niche</th>
+                        <th class="border-solid border-2 border-white">Company</th>
+                        <th class="border-solid border-2 border-white">Website</th>
+                        <th class="border-solid border-2 border-white">Personal Email</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
